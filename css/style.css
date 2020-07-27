@@ -1,0 +1,239 @@
+/* Import Variables */
+@import url(partials/_variable.css);
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    font-family: 'Offside', cursive;
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.logo img {
+    width: 40px;
+    height: 30px;
+    vertical-align: middle;
+}
+.logo span {
+    font-size: 20px;
+    vertical-align: middle;
+}
+/* INTRO AREA */
+.intro {
+    color: #fff;
+    width: 60%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/intro-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: grid;
+    align-content: center;
+    align-items: center;
+}
+#intro_logo {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+}
+.intro_center {
+    width: 40%;
+    position: relative;
+    left: 10%;
+}
+.intro h1 {
+    margin-bottom: 15px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.intro p {
+    font-style: normal;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.btn {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background: var(--primary-color);
+    border-radius: 10px;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+/* SIGNUP AREA */
+.travel {
+    width: 40%;
+}
+.travel_content {
+    padding: 5% 8%;
+    display: grid;
+    grid-gap: 30px;
+}
+.travel_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hamburger menu */
+.toggle-menu {
+    cursor: pointer;
+}
+.menu-bar{
+    width: 1rem;
+    height: 2px;
+    background: #333;
+    display: inline-block;
+    position: relative;
+    transition: background .5s;
+}
+.menu-bar::before {
+    content: '';
+    position: absolute;
+    height: inherit;
+    background-color: #333;
+    transition: all .5s;
+}
+
+.menu-bar::before{
+    top: -.6rem;
+    width: 2rem;
+}
+/* Hamburger menu */
+
+.nav_link {
+    display: inline-block;
+    margin-left: 20px;
+}
+.nav_link a {
+    color: #000;
+}
+.nav_link img {
+    width: 40px;
+    height: auto;
+    border-radius: 5px;
+    vertical-align: middle;
+    
+}
+#avatar {
+    position: relative;
+}
+#avatar::after {
+    content: "";
+    display: inline-block;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: -9px;
+    right: -2px;
+    padding: 5px;
+    border-radius: 50%;
+}
+.travel_search {
+    border-bottom: 2px solid var(--primary-color2);
+}
+.travel_search img {
+    margin-right: 4px;
+    vertical-align: middle;
+}
+.travel_search input {
+    width: 90%;
+    padding: 5px 0;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.travel_search input::placeholder {
+    color: var(--primary-color2);
+}
+.travel_discover h2 {
+    margin-bottom: 20px;
+}
+.discover_list li {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: 600;
+    color: var(--primary-color2);
+    cursor: pointer;
+}
+.discover_list li:hover {
+    color: var(--primary-color);
+}
+.list--active {
+    color: var(--primary-color) !important;
+}
+.list--active::after {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: var(--primary-color);
+    width: 5px;
+    margin: 5px auto 0 auto;
+    border-radius: 50%;
+}
+.discover_list_img {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+}
+.discover_list_img div {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+    color: #fff;
+    position: relative;
+}
+.discover_list_img div > span {
+    position: absolute;
+    bottom: 0;
+    margin: 15px;
+}
+.img1 {
+    
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/exp1.jpg);
+}
+.img2 {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/exp2.jpg);
+}
+.img3 {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/intro-bg.jpg);
+}
+.discover_list_img p {
+    font-size: 14px;
+}
+
+/* Travel Adventurous */
+.travel_adven_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 23px;
+}
+.travel_adven_heading small {
+    color: var(--primary-color2);
+    font-weight: 900;
+    cursor: pointer;
+}
+.travel_adven_list img {
+    width: 40px;
+    height: 40px;
+}
+.travel_adven_list li {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+}
+.travel_adven_list p {
+    color: var(--primary-color2);
+    font-size: 14px;
+    font-weight: 900;
+    margin-top: 8px;
+}
